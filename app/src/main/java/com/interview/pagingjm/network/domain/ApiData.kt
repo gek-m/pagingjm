@@ -1,0 +1,10 @@
+package com.interview.pagingjm.network.domain
+
+import com.google.gson.annotations.SerializedName
+
+data class ApiData(
+    @SerializedName("after") val after: String,
+    @SerializedName("before") val before: String,
+    @SerializedName("dist") val dist: Int,
+    @SerializedName("children") val children: List<ApiChildren>
+)
